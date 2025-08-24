@@ -21,25 +21,31 @@ public class Game {
 	@Column(name = "game_year")
 	private Integer year;
 	private String genre;
-	private String platform;
+	private String platforms;
+	private Double score;
 	private String imgUrl;
-	private String shortDescripton;
+	
+	@Column(columnDefinition = "TEXT")
+	private String shortDescription;
+	
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 	
 	public Game() {
 		
 	}
 
-	public Game(Long id, String title, Integer year, String genre, String platform, String imgUrl,
+	public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl,
 			String shortDescripton, String longDescription) {
 		
 		this.id = id;
 		this.title = title;
 		this.year = year;
 		this.genre = genre;
-		this.platform = platform;
+		this.score = score;
+		this.platforms = platforms;
 		this.imgUrl = imgUrl;
-		this.shortDescripton = shortDescripton;
+		this.shortDescription = shortDescripton;
 		this.longDescription = longDescription;
 	}
 
@@ -75,12 +81,20 @@ public class Game {
 		this.genre = genre;
 	}
 
-	public String getPlatform() {
-		return platform;
+	public String getPlatforms() {
+		return platforms;
+	}
+	
+	public Double getScore() {
+		return score;
 	}
 
-	public void setPlatform(String platform) {
-		this.platform = platform;
+	public void setScore(Double score) {
+		this.score = score;
+	}
+
+	public void setPlatforms(String platform) {
+		this.platforms = platform;
 	}
 
 	public String getImgUrl() {
@@ -91,12 +105,12 @@ public class Game {
 		this.imgUrl = imgUrl;
 	}
 
-	public String getShortDescripton() {
-		return shortDescripton;
+	public String getShortDescription() {
+		return shortDescription;
 	}
 
-	public void setShortDescripton(String shortDescripton) {
-		this.shortDescripton = shortDescripton;
+	public void setShortDescripton(String shortDescription) {
+		this.shortDescription = shortDescription;
 	}
 
 	public String getLongDescription() {
