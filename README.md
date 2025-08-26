@@ -106,22 +106,21 @@ spring.profiles.active=dev
 
 ## 📌 Endpoints Principais
 
-GET /games → Retorna todos os jogos.
-
-GET /lists → Retorna todas as listas de jogos.
-
-GET /lists/{id}/games → Retorna os jogos de uma lista específica.
+- `GET /games` → Retorna todos os jogos.  
+- `GET /lists` → Retorna todas as listas de jogos.  
+- `GET /lists/{id}/games` → Retorna os jogos de uma lista específica.  
+- `POST /lists/{listId}/replacement` → Reordena os jogos dentro de uma lista, permitindo mover um jogo para cima ou para baixo.  
 
 ## 📚 Aprendizados
 
-Estruturação de um projeto em camadas no Spring Boot.
+- Estruturação de um projeto em camadas no Spring Boot.
 
-Utilização de DTOs para transferência de dados.
+- Utilização de DTOs para transferência de dados.
 
-Mapeamento objeto-relacional com JPA/Hibernate.
+- Mapeamento objeto-relacional com JPA/Hibernate.
 
-Configuração de banco em memória (H2) para testes.
+- Configuração de banco em memória (H2) para testes.
 
-Exposição de APIs REST com Spring Web.
+- Exposição de APIs REST com Spring Web.
 
-Utilização de Spring Profiles para ambientes diferentes (test, dev, prod).
+- Utilização de Spring Profiles para ambientes diferentes (test, dev, prod).
