@@ -27,8 +27,8 @@ O sistema segue a arquitetura em camadas, dividindo responsabilidades de forma c
 
 📌 Fluxo de comunicação entre **Front-end** e **Back-end**:
 
-(./<img width="700" height="463" alt="Captura de tela 2025-08-25 204052" src="https://github.com/user-attachments/assets/1e83c784-33a0-4f71-b914-58f08bf6f91b" />
-)
+<img width="700" height="463" alt="Captura de tela 2025-08-25 204052" src="https://github.com/user-attachments/assets/1e83c784-33a0-4f71-b914-58f08bf6f91b" />
+
 
 ---
 
@@ -40,8 +40,8 @@ O diagrama abaixo mostra as entidades do sistema e seus relacionamentos:
 - **GameList** → Representa uma lista de jogos.  
 - **Belonging** → Tabela associativa que define a posição dos jogos dentro de uma lista.  
 
-(./<img width="824" height="290" alt="dslist-model" src="https://github.com/user-attachments/assets/c75f5cc7-a534-4711-8896-b6640d96c71d" />
-)
+<img width="824" height="290" alt="dslist-model" src="https://github.com/user-attachments/assets/c75f5cc7-a534-4711-8896-b6640d96c71d" />
+
 
 ---
 
